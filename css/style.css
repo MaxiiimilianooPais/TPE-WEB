@@ -1,0 +1,185 @@
+body {
+    background-color: beige;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.navigation {
+    display: flex;
+    height: 60px;
+    width: 1200px;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(199, 197, 195, 0.89);
+    border-bottom: 0px solid rgb(255, 251, 4);
+    padding-left: 0;
+    list-style: none;
+    border-radius: 15px;
+
+}
+
+li.navigationbuttons:hover{
+    background-color: rgba(169, 165, 165, 0.968);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+div.logo {
+    background-color: rgba(203, 194, 193, 0);
+    height: 60px;
+}
+
+img.logo {
+    height: 60px;
+}
+div.contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+section.catalogo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+h1.Featured {
+    font-size: larger;
+    font-family: cursive;
+    padding-left: 490px;
+    height: 60px;
+    background-color: rgba(199, 197, 195, 0.89);
+    padding-top: 50px;
+    width: 711px;
+    border-radius: 15px;
+
+}
+
+img.imgproduct {
+    height: 220px;
+    width: 220px;
+    border-radius: 10px;
+}
+
+article.producto {
+    height: 364px;
+    width: 220px;
+    background-color: rgba(193, 202, 191, 0.712);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+    margin: 40px;
+    padding: 10px;
+
+}
+
+button.botoncarrito {
+    height: 47px;
+    width: 220px;
+    border-radius: 15px;
+    background-color: rgba(253, 112, 4, 0.845);
+    border-style: none;
+}
+button.botoncarrito:hover{
+    background-color: rgba(4, 236, 0, 0.806);
+
+}
+
+
+
+aside{
+    background-color: rgba(161, 161, 209, 0.281);
+    border-radius: 10px;
+    height: 900px;
+    width: 450px;
+    padding: 10px;
+}
+.tituloaside{
+    color: rgb(255, 106, 0);
+    font-size: larger;
+}
+li.listaofertas{
+    padding-top: 20px;
+    color:brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer{
+    height: 100px;
+    width: 1245px;
+    background-color: chocolate;
+}
+.formulario{
+    display: flex;
+    flex-direction:row;
+}
+.contenedorizq{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+.contenedorder{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    
+}
+form{
+    padding: 10px;
+}
+.areaconsulta{
+    height: 200px;
+    width: 200px;
+    border-style: none;
+    margin-bottom: 15px;
+}
+.captcha-contenedor {
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.captcha-img{
+    display: flex;
+    flex-direction: row;
+}
+
+.background-captcha{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 15px;
+}
+.captcha {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: black;
+    font-size: 19px;
+    padding: 355px;
+    padding-left: 55px;
+    pointer-events: none;
+    user-select: none;
+   
+}
+
+.reload-btn{
+    opacity: 60%;
+    border-radius: 10px;
+    border-color: rgba(240, 248, 255, 0);
+}
+
