@@ -1,4 +1,4 @@
-"use s"
+"use strict"
 // Generar un código de captcha aleatorio
 function generarCaptcha() {
   let caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';

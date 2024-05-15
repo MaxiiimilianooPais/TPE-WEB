@@ -6,9 +6,10 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: x-large;
+    font-size: large;
     font-family: 'Times New Roman', Times, serif;
-    
+    width: 300px;
+    margin-bottom: 50px;
 }
 a{
     text-decoration: none;
@@ -16,16 +17,18 @@ a{
 }
 .navigation {
     display: flex;
-    height: 60px;
-    width: 1200px;
+    height: 10px;
     justify-content: space-around;
     align-items: center;
     background: rgba(199, 197, 195, 0.89);
     border-bottom: 0px solid rgb(255, 251, 4);
     padding-left: 0;
     list-style: none;
-    border-radius: 15px;
+    border-radius: 5px;
 
+}
+ul.navigation.show {
+    display: flex;
 }
 
 li.navigationbuttons:hover{
@@ -37,58 +40,67 @@ li.navigationbuttons:hover{
 
 div.logo {
     background-color: rgba(203, 194, 193, 0);
-    height: 60px;
+    height: 20px;
 }
 
 img.logo {
-    height: 60px;
+    height: 50px;
+    
 }
 div.contenedor{
+
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column-reverse;
+    width: 320px;
+    margin-top: 30px;
+    
+    
 }
 
 
 section.catalogo {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    width: 380px;
+    
 
 }
 
 h1.Featured {
     font-size: larger;
     font-family: cursive;
-    padding-left: 490px;
-    height: 60px;
+    padding-left: 30px;
+    height: 110px;
     background-color: rgba(199, 197, 195, 0.89);
     padding-top: 50px;
-    width: 711px;
-    border-radius: 15px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
 
 }
 
 img.imgproduct {
-    height: 220px;
-    width: 220px;
+    height: 80px;
+    width: 70px;
     border-radius: 10px;
+    margin-left: 35px;
 }
 
 article.producto {
-    height: 364px;
-    width: 220px;
+    height: 250px;
+    width: 140px;
     background-color: rgba(193, 202, 191, 0.712);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 15px;
-    margin: 40px;
+    margin: 10px;
     padding: 10px;
 
 }
 
 button.botoncarrito {
-    height: 47px;
-    width: 220px;
+    height: 45px;
+    width: 130px;
     border-radius: 15px;
     background-color: rgba(253, 112, 4, 0.845);
     border-style: none;
@@ -103,9 +115,10 @@ button.botoncarrito:hover{
 aside{
     background-color: rgba(161, 161, 209, 0.281);
     border-radius: 10px;
-    height: 900px;
-    width: 450px;
+    height: 640px;
+    width: 300px;
     padding: 10px;
+    margin: 10px;
 }
 .tituloaside{
     color: rgb(255, 106, 0);
@@ -119,7 +132,7 @@ li.listaofertas{
 
 footer{
     height: 100px;
-    width: 1245px;
+    width: 345px;
     background-color: chocolate;
 }
 .formulario{
@@ -134,7 +147,7 @@ footer{
 .contenedorder{
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 380px;
     
 }
 form{
@@ -183,3 +196,20 @@ form{
     border-color: rgba(240, 248, 255, 0);
 }
 
+
+
+
+@media screen and (min-width: 660px){
+
+        /* en desktop ocultamos siempre el boton del menu */
+        .btn_menu {
+            display: none;
+         }
+     
+        /* cambiamos la direccion del flex */
+         ul.navigation {
+             display: flex;
+             flex-direction: row;
+         }
+
+}
