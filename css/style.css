@@ -4,38 +4,50 @@ body {
 
 header {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: large;
-    font-family: 'Times New Roman', Times, serif;
     width: 300px;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-a{
-    text-decoration: none;
-    color: inherit;
-}
-.navigation {
-    display: flex;
-    height: 10px;
-    justify-content: space-around;
-    align-items: center;
-    background: rgba(199, 197, 195, 0.89);
-    border-bottom: 0px solid rgb(255, 251, 4);
-    padding-left: 0;
-    list-style: none;
-    border-radius: 5px;
 
+.btn_menu {
+    height: 50px;
+    width: 50px;
+    padding: 16px;
+    padding-bottom: 0px;
+    border-radius: 15px;
+    background-color: rgba(193, 202, 191, 0.712);
+    margin-left: 10px;
 }
+
+ul.navigation {
+    width: 100%;
+    display: none;
+}
+
 ul.navigation.show {
+    list-style: none;
     display: flex;
+    width: 280px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-li.navigationbuttons:hover{
-    background-color: rgba(169, 165, 165, 0.968);
-    border-radius: 10px;
-    padding: 10px;
+.menu {
+    display: flex;
+    background-color:rgba(193, 202, 191, 0.712);
+    border-radius: 15px;
+    width: 320px;
+    margin-left: 10px;
 }
+
+ul.navigation li a {
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    margin: 18px;
+}
+
+
 
 
 div.logo {
@@ -45,16 +57,15 @@ div.logo {
 
 img.logo {
     height: 50px;
-    
+
 }
-div.contenedor{
+
+div.contenedor {
 
     display: flex;
     flex-direction: column-reverse;
     width: 320px;
     margin-top: 30px;
-    
-    
 }
 
 
@@ -63,8 +74,6 @@ section.catalogo {
     flex-direction: row;
     flex-flow: row wrap;
     width: 380px;
-    
-
 }
 
 h1.Featured {
@@ -77,7 +86,6 @@ h1.Featured {
     width: 300px;
     margin: 10px;
     border-radius: 10px;
-
 }
 
 img.imgproduct {
@@ -95,7 +103,6 @@ article.producto {
     border-radius: 15px;
     margin: 10px;
     padding: 10px;
-
 }
 
 button.botoncarrito {
@@ -105,14 +112,15 @@ button.botoncarrito {
     background-color: rgba(253, 112, 4, 0.845);
     border-style: none;
 }
-button.botoncarrito:hover{
+
+button.botoncarrito:hover {
     background-color: rgba(4, 236, 0, 0.806);
 
 }
 
 
 
-aside{
+aside {
     background-color: rgba(161, 161, 209, 0.281);
     border-radius: 10px;
     height: 640px;
@@ -120,45 +128,53 @@ aside{
     padding: 10px;
     margin: 10px;
 }
-.tituloaside{
+
+.tituloaside {
     color: rgb(255, 106, 0);
     font-size: larger;
 }
-li.listaofertas{
+
+li.listaofertas {
     padding-top: 20px;
-    color:brown;
+    color: brown;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-footer{
+footer {
     height: 100px;
     width: 345px;
     background-color: chocolate;
 }
-.formulario{
+
+.formulario {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
 }
-.contenedorizq{
+
+.contenedorizq {
     display: flex;
     flex-direction: column;
     width: 250px;
 }
-.contenedorder{
+
+.contenedorder {
     display: flex;
     flex-direction: column;
     width: 380px;
-    
+
 }
-form{
+
+form {
     padding: 10px;
 }
-.areaconsulta{
+
+.areaconsulta {
     height: 200px;
     width: 200px;
     border-style: none;
     margin-bottom: 15px;
 }
+
 .captcha-contenedor {
     height: 100px;
     width: 300px;
@@ -166,17 +182,18 @@ form{
     position: relative;
 }
 
-.captcha-img{
+.captcha-img {
     display: flex;
     flex-direction: row;
 }
 
-.background-captcha{
+.background-captcha {
     width: 200px;
     height: 50px;
     border-radius: 10px;
     margin: 15px;
 }
+
 .captcha {
     position: absolute;
     top: 0px;
@@ -187,10 +204,10 @@ form{
     padding-left: 55px;
     pointer-events: none;
     user-select: none;
-   
+
 }
 
-.reload-btn{
+.reload-btn {
     opacity: 60%;
     border-radius: 10px;
     border-color: rgba(240, 248, 255, 0);
@@ -199,17 +216,17 @@ form{
 
 
 
-@media screen and (min-width: 660px){
+@media screen and (min-width: 660px) {
 
-        /* en desktop ocultamos siempre el boton del menu */
-        .btn_menu {
-            display: none;
-         }
-     
-        /* cambiamos la direccion del flex */
-         ul.navigation {
-             display: flex;
-             flex-direction: row;
-         }
+    /* en desktop ocultamos siempre el boton del menu */
+    .btn_menu {
+        display: none;
+    }
+
+    /* cambiamos la direccion del flex */
+    ul.navigation {
+        display: flex;
+        flex-direction: row;
+    }
 
 }
