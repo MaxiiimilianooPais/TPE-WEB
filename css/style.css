@@ -1,5 +1,6 @@
 body {
     background-color: beige;
+    height: 100%;
 }
 
 header {
@@ -7,6 +8,7 @@ header {
     width: 300px;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 3%;
 }
 
 .btn_menu {
@@ -15,47 +17,53 @@ header {
     padding: 16px;
     padding-bottom: 0px;
     border-radius: 15px;
-    background-color: rgba(193, 202, 191, 0.712);
-    margin-left: 10px;
+    margin-left: 100%;
 }
 
 ul.navigation {
-    width: 100%;
     display: none;
 }
 
 ul.navigation.show {
-    list-style: none;
     display: flex;
-    width: 280px;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: end;
+    gap: 2rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #e7e7d2;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(102, 95, 68, 0.5);
+    list-style: none;
 }
 
 .menu {
     display: flex;
-    background-color:rgba(193, 202, 191, 0.712);
     border-radius: 15px;
-    width: 320px;
     margin-left: 10px;
 }
+
 /* links lista */
 ul.navigation li a {
     color: rgb(0, 0, 0);
     font-size: medium;
     margin: 18px;
+    text-decoration: none;
 }
 
 /* caja logo */
 div.logo {
     height: 20px;
 }
+
 /* imagen logo */
 img.logo {
-    height: 50px;
+    height: 70px;
 
 }
+
 /* contenedor principal del main */
 div.contenedor {
 
@@ -64,8 +72,8 @@ div.contenedor {
     width: 320px;
     margin-top: 30px;
 }
-/* seccion catalogo */
 
+/* seccion catalogo */
 section.catalogo {
     display: flex;
     flex-direction: row;
@@ -93,6 +101,7 @@ img.imgproduct {
     border-radius: 10px;
     margin-left: 35px;
 }
+
 article.producto {
     height: 250px;
     width: 140px;
@@ -102,6 +111,7 @@ article.producto {
     margin: 10px;
     padding: 10px;
 }
+
 button.botoncarrito {
     height: 45px;
     width: 130px;
@@ -109,9 +119,11 @@ button.botoncarrito {
     background-color: rgba(253, 112, 4, 0.845);
     border-style: none;
 }
+
 button.botoncarrito:hover {
     background-color: rgba(4, 236, 0, 0.806);
 }
+
 /* aside */
 aside {
     background-color: rgba(161, 161, 209, 0.281);
@@ -121,10 +133,12 @@ aside {
     padding: 10px;
     margin: 10px;
 }
+
 .tituloaside {
     color: rgb(255, 106, 0);
     font-size: larger;
 }
+
 li.listaofertas {
     padding-top: 20px;
     color: brown;
@@ -132,60 +146,73 @@ li.listaofertas {
 }
 
 footer {
-    height: 100px;
-    width: 345px;
-    background-color: chocolate;
+    background-color: rgba(212, 210, 203, 0.5);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
 }
 
-
-
 /* apartir de aca empieza el estilo de contactactos */
+.mainContacto {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+ .consultanos{
+    background-color: rgba(235, 213, 14, 0.724);
+    width: 100%;
+    border-radius: 10%;
+ }
+
 .formulario {
     display: flex;
     flex-direction: row;
 }
+
 .contenedorizq {
     display: flex;
     flex-direction: column;
     width: 250px;
 }
+
 .contenedorder {
     display: flex;
     flex-direction: column;
     width: 380px;
 }
-form {
-    padding: 10px;
-}
+
 .areaconsulta {
     height: 200px;
     width: 200px;
     border-style: none;
     margin-bottom: 15px;
 }
+
 .captcha-contenedor {
     height: 100px;
     width: 300px;
     border-radius: 10px;
     position: relative;
 }
+
 .captcha-img {
     display: flex;
     flex-direction: row;
 }
+
 .background-captcha {
     width: 200px;
     height: 50px;
     border-radius: 10px;
     margin: 15px;
 }
+
 .captcha {
     position: absolute;
-    top: 0px;
-    left: 0px;
     color: black;
     font-size: 19px;
-    padding: 355px;
+    padding: 9%;
     padding-left: 55px;
     pointer-events: none;
     user-select: none;
@@ -197,12 +224,11 @@ form {
     border-color: rgba(240, 248, 255, 0);
 }
 
-
-
+.imagenNegocio {
+    width: 100%;
+}
 
 @media screen and (min-width: 660px) {
-
-   
     .btn_menu {
         display: none;
     }
@@ -210,6 +236,119 @@ form {
     ul.navigation {
         display: flex;
         flex-direction: row;
+        list-style: none;
+    }
+
+    li.navigationbuttons {
+        height: 40px;
+        margin-top: 27px;
+        margin-right: 200px;
+    }
+
+    ul.navigation li a {
+        font-size: x-large;
+        text-decoration: none;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    header {
+        width: 100%;
+        height: 100px;
+        background-color: rgba(212, 210, 203, 0.5);
+        padding: 0;
+    }
+
+    li.navigationbuttons:hover {
+        background-color: rgba(169, 165, 165, 0.968);
+        border-radius: 10px;
+    }
+
+    div.contenedorInicio {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+    }
+
+    .cerrar-menu {
+        display: none;
+    }
+
+    h1.Featured {
+        height: 60px;
+        padding-top: 50px;
+        width: 100%;
+        border-radius: 15px;
+        text-align: center;
+
+    }
+
+    img.imgproduct {
+        height: 180px;
+        width: 170px;
+        border-radius: 10px;
+    }
+
+    section.catalogo {
+        flex-flow: wrap;
+        width: auto;
+    }
+
+    article.producto {
+        height: 50%;
+        width: 220px;
+        border-radius: 15px;
+        margin: 40px;
+        padding: 10px;
+
+    }
+
+    button.botoncarrito {
+        height: 47px;
+        width: 220px;
+        border-radius: 15px;
+        background-color: rgba(253, 112, 4, 0.845);
+        border-style: none;
+    }
+
+    aside {
+        height: 100%;
+        width: 500px;
+    }
+
+    li.listaofertas {
+        padding-top: 20px;
+        color: brown;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        padding-left: 5px;
+        align-items: center;
+        font-size: 12PX;
+        margin-top: 14%;
+    }
+
+    .captcha {
+        padding: 2%;
+    }
+
+    .mainContacto {
+        flex-direction: row;
+        gap: 13rem;
+
+
+    }
+
+    .imagenNegocio {
+        width: 100%;
+        margin: 0;
     }
 
 }
