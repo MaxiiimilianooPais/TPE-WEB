@@ -58,6 +58,9 @@ div.logo {
 img.logo {
     height: 70px;
 }
+img.banner{
+    width: 100%;
+}
 /* contenedor principal del main */
 div.contenedor {
     display: flex;
