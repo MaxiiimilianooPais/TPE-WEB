@@ -2,7 +2,10 @@ body {
     background-color: beige;
     height: 100%;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
 header {
     display: flex;
     width: 300px;
@@ -10,7 +13,6 @@ header {
     justify-content: space-between;
     margin-bottom: 3%;
 }
-
 .btn_menu {
     height: 50px;
     width: 50px;
@@ -19,11 +21,9 @@ header {
     border-radius: 15px;
     margin-left: 100%;
 }
-
 ul.navigation {
     display: none;
 }
-
 ul.navigation.show {
     display: flex;
     flex-direction: column;
@@ -38,13 +38,11 @@ ul.navigation.show {
     box-shadow: 0 0 0 100vmax rgba(102, 95, 68, 0.5);
     list-style: none;
 }
-
 .menu {
     display: flex;
     border-radius: 15px;
     margin-left: 10px;
 }
-
 /* links lista */
 ul.navigation li a {
     color: rgb(0, 0, 0);
@@ -52,21 +50,16 @@ ul.navigation li a {
     margin: 18px;
     text-decoration: none;
 }
-
 /* caja logo */
 div.logo {
     height: 20px;
 }
-
 /* imagen logo */
 img.logo {
     height: 70px;
-
 }
-
 /* contenedor principal del main */
 div.contenedor {
-
     display: flex;
     flex-direction: column-reverse;
     width: 320px;
@@ -93,35 +86,35 @@ h1.Featured {
     margin: 10px;
     border-radius: 10px;
 }
-
 /* tarjetas de productos */
 img.imgproduct {
     height: 80px;
     width: 70px;
     border-radius: 10px;
-    margin-left: 35px;
 }
-
 article.producto {
-    height: 250px;
+    display: flex;
     width: 140px;
     background-color: rgba(193, 202, 191, 0.712);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 15px;
     margin: 10px;
     padding: 10px;
+    flex-direction: column;
+    align-items: center;;
 }
-
-button.botoncarrito {
+div.linkContacto{
+    text-align: center;
+    padding-top: 8%;
     height: 45px;
     width: 130px;
     border-radius: 15px;
     background-color: rgba(253, 112, 4, 0.845);
-    border-style: none;
+    text-decoration: none;
 }
-
-button.botoncarrito:hover {
+div.linkContacto:hover {
     background-color: rgba(4, 236, 0, 0.806);
+    text-decoration: none;
 }
 
 /* aside */
@@ -133,26 +126,21 @@ aside {
     padding: 10px;
     margin: 10px;
 }
-
 .tituloaside {
     color: rgb(255, 106, 0);
     font-size: larger;
 }
-
 li.listaofertas {
     padding-top: 20px;
     color: brown;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 footer {
     background-color: rgba(212, 210, 203, 0.5);
     width: 100%;
     display: flex;
     flex-direction: column;
-
 }
-
 /* apartir de aca empieza el estilo de contactactos */
 .mainContacto {
     display: flex;
@@ -164,50 +152,42 @@ footer {
     width: 100%;
     border-radius: 10%;
  }
-
 .formulario {
     display: flex;
     flex-direction: row;
 }
-
 .contenedorizq {
     display: flex;
     flex-direction: column;
     width: 250px;
 }
-
 .contenedorder {
     display: flex;
     flex-direction: column;
     width: 380px;
 }
-
 .areaconsulta {
     height: 200px;
     width: 200px;
     border-style: none;
     margin-bottom: 15px;
 }
-
 .captcha-contenedor {
     height: 100px;
     width: 300px;
     border-radius: 10px;
     position: relative;
 }
-
 .captcha-img {
     display: flex;
     flex-direction: row;
 }
-
 .background-captcha {
     width: 200px;
     height: 50px;
     border-radius: 10px;
     margin: 15px;
 }
-
 .captcha {
     position: absolute;
     color: black;
@@ -217,15 +197,33 @@ footer {
     pointer-events: none;
     user-select: none;
 }
-
 .reload-btn {
     opacity: 60%;
     border-radius: 10px;
     border-color: rgba(240, 248, 255, 0);
 }
-
 .imagenNegocio {
     width: 100%;
+}
+/* tabla nosotros */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+td {
+    background-color: #f9f9f9;
 }
 
 @media screen and (min-width: 660px) {
