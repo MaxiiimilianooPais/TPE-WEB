@@ -21,9 +21,9 @@ function mostrarCaptcha() {
 function validarCaptcha() {
   let captchaGenerado = document.querySelector('.captcha').textContent;
   let captchaIngresado = document.querySelector('.input-area').value.trim();
-
+// trim() se utiliza para eliminar los espacios en blanco 
   if (captchaIngresado == captchaGenerado) {
-    document.querySelector('.status-captcha').innerHTML = 'Captcha válido';
+    document.querySelector('.status-captcha').innerHTML = 'Captcha válido, mensaje enviado!';
   } else {
     document.querySelector('.status-captcha').innerHTML = 'Captcha inválido. Inténtelo de nuevo.';
   }

@@ -165,7 +165,8 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin: 10%;
+    margin-inline: 10%;
+    margin-bottom: 3%;
 }
 .contenedorizq {
     display: flex;
@@ -345,9 +346,11 @@ td {
         font-size: 12PX;
         margin-top: 14%;
     }
-
-    .captcha {
-        padding: 2%;
+    div.fomulario{
+        margin: 0%;
+    }
+     .captcha {
+        padding: 3%;
     }
 
     .mainContacto {
