@@ -15,7 +15,10 @@
             <img class="logo" src="img/tienda-canrock-logo-1588778010.jpg" alt="logo">
         </div>
 
-        <div class="btn_menu"><a>MENÚ</a></div>
+        <div class="btn_menu">
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
 
         <div class="menu">
             <ul class="navigation">
@@ -30,11 +33,11 @@
     <main>
         <div class="consultanos">
             <h1 class="consultanos">Contactanos!!</h1>
-            
+
         </div>
         <article class="mainContacto">
             <div class="formulario">
-    
+
                 <div class="contenedorizq">
                     <div class="contact-log">
                         <p class="textoform">Ingrese Su Nombre</p>
@@ -49,38 +52,43 @@
                             <option>Mar del plata </option>
                             <option> Balcarce</option>
                         </select>
-    
-    
-                        <div class="captcha-img">
-                            <img class="background-captcha" src="/img/captcha.jpeg" alt="fondo del capcha">
-                            <span class="captcha"></span>
-    
-                        </div>
-    
+
+
+
+
                     </div>
                 </div>
-    
-    
+
+
                 <div class="contenedorder">
                     <input class="areaconsulta" type="text" placeholder="Su consulta">
                     <form action="#">
-                        <input class="input-area" type="text" placeholder=" ingrese el codigo" spellcheck="false" required>
-                        <button class="check-btn">Aceptar</button>
-                        <button class="reload-btn">Recargar</button>
+                        <div class="captcha-img">
+                            <img class="background-captcha" src="/img/captcha.jpeg" alt="fondo del capcha">
+                            <span class="captcha"></span>
+
+                        </div>
+                        <input class="input-area" type="text" placeholder=" ingrese el codigo" spellcheck="false"
+                            required>
+                        <div class="botonesCaptcha">
+                            <button class="check-btn">Enviar</button>
+                            <button class="reload-btn">Recargar codigo</button>
+                        </div>
+
                         <div class="status-captcha"></div>
-    
+
                     </form>
                 </div>
             </div>
-    
-    
+
+
             <div>
                 <img class="imagenNegocio" src="img/imagenPetShop2.jpg" alt="imagen del local">
             </div>
-    
-    
-    
-    
+
+
+
+
         </article>
     </main>
     <footer>
@@ -90,7 +98,8 @@
         <p>Dirección: 123 Saenz Peña, Tandil, Argentina</p>
         <p>&copy; 2024 VITAL-CAN SA. Todos los derechos reservados.</p>
     </footer>
-
+    
+    <script src="https://kit.fontawesome.com/db9d899465.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/captcha.js"></script>
 </body>

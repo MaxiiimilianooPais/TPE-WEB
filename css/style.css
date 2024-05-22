@@ -15,14 +15,14 @@ header {
     margin-bottom: 3%;
     padding: 0%;
     margin: 0px;
+    margin-bottom: 40px;
 }
-.btn_menu {
-    height: 50px;
-    width: 50px;
+div.btn_menu {
+    height: 5%px;
+    width: 5%;
     padding: 16px;
-    padding-bottom: 0px;
     border-radius: 15px;
-
+    margin-left: 110px;
 }
 ul.navigation {
     display: none;
@@ -31,11 +31,13 @@ ul.navigation.show {
     display: flex;
     flex-direction: column;
     align-items: end;
+    height: 100%;
     gap: 2rem;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
+    margin: 0%;
     background-color: #e7e7d2;
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(102, 95, 68, 0.5);
@@ -50,7 +52,6 @@ ul.navigation.show {
 ul.navigation li a {
     color: rgb(0, 0, 0);
     font-size: medium;
-    
     text-decoration: none;
 }
 /* caja logo */
@@ -71,7 +72,6 @@ div.contenedor {
     width: 320px;
     margin-top: 30px;
 }
-
 /* seccion catalogo */
 section.catalogo {
     display: flex;
@@ -123,7 +123,6 @@ div.linkContacto:hover {
     background-color: rgba(4, 236, 0, 0.806);
     text-decoration: none;
 }
-
 /* aside */
 aside {
     background-color: rgba(161, 161, 209, 0.281);
@@ -146,41 +145,47 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
+    bottom: 0%;
+    height: 100%;
+    margin: 0%;
 }
 /* apartir de aca empieza el estilo de contactactos */
 .mainContacto {
     display: flex;
     flex-direction: column;
     height: 100%;
+    margin: 0;
+    width: 100%;
 }
  .consultanos{
-    background-color: rgba(235, 213, 14, 0.724);
+    background-color: rgba(235, 169, 14, 0.724);
     width: 100%;
-    border-radius: 10%;
  }
 .formulario {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 10%;
 }
 .contenedorizq {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 100px;
 }
 .contenedorder {
     display: flex;
     flex-direction: column;
-    width: 380px;
+    width: 120px;
 }
 .areaconsulta {
-    height: 200px;
+    height: 110px;
     width: 200px;
     border-style: none;
     margin-bottom: 15px;
 }
 .captcha-contenedor {
     height: 100px;
-    width: 300px;
+    width: 100%;
     border-radius: 10px;
     position: relative;
 }
@@ -203,19 +208,16 @@ footer {
     pointer-events: none;
     user-select: none;
 }
-.reload-btn {
-    opacity: 60%;
-    border-radius: 10px;
-    border-color: rgba(240, 248, 255, 0);
-}
 .imagenNegocio {
     width: 100%;
 }
-
-
-img.bannerPerro{
-    width: 120%;
+div.botonesCaptcha{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 10px;
 }
+
 /* tabla nosotros */
 
 table {
@@ -338,7 +340,7 @@ td {
         display: flex;
         flex-direction: row;
         gap: 3rem;
-        padding-left: 5px;
+        height: 100px;
         align-items: center;
         font-size: 12PX;
         margin-top: 14%;
